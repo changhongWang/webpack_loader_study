@@ -18,7 +18,9 @@ module.exports = {
                         options: {
                             prms: 'test'
                         }
-                    }
+                    },
+                    path.resolve('./loaders/asyncLoader.js'),
+                    path.resolve('./loaders/emitFileLoader.js')
                 ]
             }
         ]
