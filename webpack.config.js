@@ -13,6 +13,12 @@ module.exports = {
                 use: [
                     path.resolve('./loaders/loaderA.js'),
                     path.resolve('./loaders/loaderB.js'),
+                    {
+                        loader: path.resolve('./loaders/getOptionsLoader.js'),
+                        options: {
+                            prms: 'test'
+                        }
+                    }
                 ]
             }
         ]
