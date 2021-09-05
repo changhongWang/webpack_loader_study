@@ -20,7 +20,14 @@ module.exports = {
                         }
                     },
                     path.resolve('./loaders/asyncLoader.js'),
-                    path.resolve('./loaders/emitFileLoader.js')
+                    path.resolve('./loaders/emitFileLoader.js'),
+                ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
                 ]
             }
         ]
