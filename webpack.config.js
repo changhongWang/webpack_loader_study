@@ -26,7 +26,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
+                    path.resolve('./loaders/spritesLoader.js'),
                     'css-loader'
                 ]
             }
