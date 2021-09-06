@@ -18,12 +18,11 @@ module.exports = function(source) {
         console.log(item, imgPath, 999);
         return path.join(__dirname, imgPath);
     })
-    const that = this;
-    Spritesmith.run({ src: sprites }, function handleRes(err, res) {
+    Spritesmith.run({ src: sprites }, (err, res) => {
         if (err) {
             console.error('generate sprites image FAILED, error:', err);
         } else {
-            that.emitFile('sprites.png', res.image)
+            this.emitFile('sprites.png', res.image);
         }
     })
     return source;
