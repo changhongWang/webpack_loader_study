@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "css-loader": "^6.2.0",
+    "jszip": "^3.7.1",
     "loader-utils": "^2.0.0",
     "spritesmith": "^3.4.0",
     "style-loader": "^3.2.1"

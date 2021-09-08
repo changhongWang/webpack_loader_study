@@ -1,4 +1,6 @@
 const path = require('path');
+const JsZipPlugin = require(path.join(__dirname, './plugins/jsZipPlugin'));
+const ConsolePlugin = require(path.join(__dirname, './plugins/consolePlugin'));
 
 module.exports = {
     entry: path.join(__dirname, 'src/index.js'),
@@ -31,5 +33,16 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new ConsolePlugin({
+            // 参数会在实例化时传入
+            name: 'jack',
+            gender: 'male',
+            age: 25
+        }),
+        new JsZipPlugin({
+            fileName: 'output'
+        })
+    ]
 }
