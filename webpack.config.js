@@ -42,7 +42,7 @@ module.exports = {
             age: 25
         }),
         new JsZipPlugin({
-            fileName: 'output'
+            fileName: 'offlinePackage'
         })
     ]
 }

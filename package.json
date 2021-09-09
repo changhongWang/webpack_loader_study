@@ -19,6 +19,7 @@
     "jszip": "^3.7.1",
     "loader-utils": "^2.0.0",
     "spritesmith": "^3.4.0",
-    "style-loader": "^3.2.1"
+    "style-loader": "^3.2.1",
+    "webpack-sources": "^3.2.0"
   }
 }
